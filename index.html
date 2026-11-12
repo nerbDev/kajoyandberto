@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our Story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="collage" tabindex="-1">
+    <header class="intro"><h2 id="introTitle"></h2><p id="introNames"></p></header>
+    <div id="grid"></div>
+    <div class="tail"></div>
+  </main>
+  <div class="veil"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <p id="lyric" class="lyric" aria-live="polite"></p>
+
+  <section id="start" class="screen">
+    <h1 id="title"></h1>
+    <p id="names"></p>
+    <p id="since"></p>
+    <button id="begin" type="button">Tap to begin</button>
+  </section>
+
+  <section id="end" class="screen hidden">
+    <p id="closing"></p>
+    <p id="endNames"></p>
+    <button id="replay" type="button">Watch again</button>
+  </section>
+
+  <div id="bloom" aria-hidden="true"></div>
+
+  <button id="toggle" type="button" class="hidden" aria-label="Pause">Pause</button>
+  <div id="bar"><i></i></div>
+  <div id="tune" class="hidden"></div>
+
+  <audio id="audio" preload="auto"></audio>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
